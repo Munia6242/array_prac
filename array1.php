@@ -99,7 +99,32 @@ foreach ($students as $key => $value){
     echo "</pre>";
 }
 
+?>
 
+
+
+<?php
+
+// common function of php 
+
+echo strtoupper( "My Practice Workbook"); // out -> 11 //	show  data in uppercase
+    
+    echo "<br>";
+
+    echo strtolower("My Practice Workbook");  // output -> sabuj  // show data in lowercase
+    echo "<br>";
+
+    echo strlen("Mimha Moni Daughter of humayoun kabir"); // Output -> SABUJ  // lenghth of string
+    echo "<br>";
+
+    echo strpos("Hi,Jone!","Jone!"); //Find position of a substring
+    echo "<br>";
+    echo str_replace("Hello","Hi","Hello , Your name is Jone");
+    echo "<br>";
+    echo trim (" Hi !  ");
+    echo "<br>";
+
+?>
 
 
 
