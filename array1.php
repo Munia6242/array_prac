@@ -7,6 +7,8 @@ echo "<pre>";
 
 print_r($Names);
 
+echo "</pre>";
+
 
 // Associative array
 
@@ -16,6 +18,8 @@ echo "<pre>";
 
 print_r($names["Munia"]);
 
+echo "</pre>";
+
 ?>
 
 
@@ -23,31 +27,79 @@ print_r($names["Munia"]);
 
 // Index array
 
-$fruits = array("Apple", "Banana", "Cherry");
-$fruits [] ="Orange";   // add array
+$students = array("Mabiha", "Nujhat", "Nidan");
+$students [] ="Mehnoor";   // add array
 
 
 echo "<pre>";
-var_dump($fruits);
+var_dump($students);
 echo "</pre>";
 
 // add multiple value
 
-array_push($fruits,"Kiwi", "Lemon");
+array_push($students,"Artha", "Mahfuz");
 
 echo "<pre>";
-var_dump($fruits);
+var_dump($students);
 echo "</pre>";
+
+?>
+
+
+
+
+<?php
 
 // Associative array
 
-$cars = array("brand" => "Ford", "model" => "Mustang");
+$information =[
+    "name" => "Munia",
+    "age" => "22",
+    "class" => "3rd Year",
+];
 
-// $cars ["year"]=2025;
-// $cars ["color"]="Sky-Blue";
-$cars +=["color" => "Sky-Blue", "year" => 2025];
 
-echo "<pre>";
-//var_dump($cars);
-echo "</pre>";
+foreach ($information as $key => $value){
+    echo "$key : => $value <br>";
+}
+
 ?>
+
+
+
+
+
+<?php
+
+// Multidimensional array
+
+$students = [
+    [
+        "name" => "Munia",
+        "age" => "22",
+        "class" => "3rd Year",
+    ],
+
+    [
+        "name" => "Tania",
+        "age" => "23",
+        "class" => "4th Year",
+    ],
+
+    [
+        "name" => "Nuba",
+        "age" => "18",
+        "class" => "SSC",
+    ]
+];
+
+foreach ($students as $key => $value){
+    echo "<pre>";
+    print_r($value);
+    echo "</pre>";
+}
+
+
+
+
+
